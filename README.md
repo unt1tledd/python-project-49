@@ -22,3 +22,5 @@
 
 <a href="https://asciinema.org/a/vNa92DB4esw2MZ6CiBOLXcy4j" target="_blank"><img src="https://asciinema.org/a/vNa92DB4esw2MZ6CiBOLXcy4j.svg" /></a>
 
+<p1.CodeClimate</p>  
+<a href="https://codeclimate.com/github/unt1tledd/python-project-49/maintainability"><img src="https://api.codeclimate.com/v1/badges/0341c2f9d690dfc0840e/maintainability" /></a>
