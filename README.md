@@ -1,5 +1,8 @@
 <h1>BRAIN-GAMES</h1>
 
+[![hexlet-check](https://github.com/unt1tledd/python-project-49/actions/workflows/hexlet-check.yml/badge.svg?branch=main)](https://github.com/unt1tledd/python-project-49/actions/workflows/hexlet-check.yml)
+<a href="https://codeclimate.com/github/unt1tledd/python-project-49/maintainability"><img src="https://api.codeclimate.com/v1/badges/0341c2f9d690dfc0840e/maintainability" /></a>
+
   <h2>COMMANDS:</h2>
 
 1.brain-even:
@@ -21,6 +24,3 @@
 5.brain-progression:
 
 <a href="https://asciinema.org/a/vNa92DB4esw2MZ6CiBOLXcy4j" target="_blank"><img src="https://asciinema.org/a/vNa92DB4esw2MZ6CiBOLXcy4j.svg" /></a>
-
-<p1>CodeClimate</p1>  
-<a href="https://codeclimate.com/github/unt1tledd/python-project-49/maintainability"><img src="https://api.codeclimate.com/v1/badges/0341c2f9d690dfc0840e/maintainability" /></a>
