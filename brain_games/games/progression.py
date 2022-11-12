@@ -1,16 +1,16 @@
 
 
 import random
-from brain_games.cli import num_in_list
+from brain_games.engine import creating_progress
 
 
 rule = 'What number is missing in the progression?'
 
 
 def task():
-    numbers = num_in_list()
-    nom = random.randint(1, 9)
-    result = str(numbers[nom])
-    numbers[nom] = '..'
-    question = " ".join(map(str, numbers[0:10]))
-    return question, result
+    progression = creating_progress()
+    num = random.randint(1, 9)
+    correct_answer = str(progression[num])
+    progression[num] = '..'
+    question = " ".join(map(str, progression[0:10]))
+    return question, correct_answer
