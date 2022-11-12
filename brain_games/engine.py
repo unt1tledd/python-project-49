@@ -10,7 +10,7 @@ def is_even(question):
         correct_answer = 'yes'
     else:
         correct_answer = 'no'
-    return result
+    return correct_answer
 
 
 def creating_progress():
