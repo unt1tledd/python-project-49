@@ -1,13 +1,13 @@
 
 
 import random
-from brain_games.cli import pr
+from brain_games.engine import is_prime
 
 
 rule = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
-def task():
+def tasking():
     question = random.randint(2, 100)
-    result = str(pr(question))
-    return question, result
+    correct_answer = str(is_prime(question))
+    return question, correct_answer
