@@ -49,14 +49,14 @@ def is_prime(num):
         return 'yes'
 
 
-def check_the_answer(question, correct_answer):
+def check_the_answer(question, correct_ans):
     print(f"Question: {question}")
     answer = prompt.string('Your answer: ')
-    if correct_answer == answer:
+    if correct_ans == answer:
         print('Correct!')
         return True
     else:
-        print(f"{answer} is wrong answer ;(. Correct answer was {correct_answer}")
+        print(f"{answer} is wrong answer ;(. Correct answer was {correct_ans}")
         return False
 
 
