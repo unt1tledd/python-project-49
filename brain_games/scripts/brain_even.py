@@ -1,6 +1,6 @@
 
 
-from brain_games.cli import logic_of_game
+from brain_games.engine import logic_of_game
 from brain_games.games import even
 
 
