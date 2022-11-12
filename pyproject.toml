@@ -6,7 +6,7 @@ authors = ["Sonya Grigorovich"]
 readme = "README.md"
 packages = [{include = "brain_games"}]
 repository = "https://github.com/unt1tledd/python-project-49.git"
-classifiers = [
+classifiers = []
 
 [tool.poetry.dependencies]
 python = "^3.8"
