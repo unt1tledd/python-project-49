@@ -1,16 +1,16 @@
 
 import random
-from brain_games.cli import arifm
+from brain_games.engine import arithmetic_operations
 
 
 rule = 'What is the result of the expression?'
 
 
-def task():
+def tasking():
     number1 = random.randint(0, 100)
     number2 = random.randint(0, 100)
-    lists = ['+', '-', '*']
-    operation = random.choice(lists)
+    l = ['+', '-', '*']
+    operation = random.choice(l)
     question = f"{number1} {operation} {number2}"
-    result = str(arifm(operation, number1, number2))
-    return question, result
+    correct_answer = str(arithmetic_operations(operation, number1, number2))
+    return question, correct_answer
