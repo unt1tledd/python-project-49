@@ -2,7 +2,7 @@
 
 import random
 import prompt
-import brain_games.cli from welcome_user
+from brain_games.cli import welcome_user
 
 
 def is_even(question):
