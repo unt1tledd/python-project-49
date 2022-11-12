@@ -7,7 +7,7 @@ from brain_games.engine import creating_progress
 rule = 'What number is missing in the progression?'
 
 
-def task():
+def tasking():
     progression = creating_progress()
     num = random.randint(1, 9)
     correct_answer = str(progression[num])
