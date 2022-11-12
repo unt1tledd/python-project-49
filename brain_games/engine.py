@@ -66,7 +66,7 @@ def logic_of_game(name_of_game):
     a = 3
     while a > 0:
         question, correct_answer = name_of_game.tasking()
-        if check_the_answrer(question, correct_answer):
+        if check_the_answer(question, correct_answer):
             a -= 1
             if a == 0:
                 print(f'Congratulations, {name}!')
