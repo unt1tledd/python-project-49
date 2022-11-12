@@ -1,13 +1,13 @@
 
 
 import random
-from brain_games.cli import ev
+from brain_games.engine import is_even
 
 
 rule = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
-def task():
+def tasking():
     question = random.randint(1, 100)
-    result = str(ev(question))
-    return question, result
+    correct_answer = str(is_even(question))
+    return question, correct_answer
