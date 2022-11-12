@@ -12,14 +12,14 @@ def is_even(question):
     return result
 
 
-def num_in_list():
-    numbers = []
+def creating_progress():
+    progression = []
     num1 = random.randint(0, 10)
     num2 = random.randint(90, 100)
     st = random.randint(1, 10)
     for i in range(num1, num2, st):
-        numbers.append(i)
-    return numbers
+        progression.append(i)
+    return progression
 
 
 def arithmetic_operations(operation, number1, number2):
