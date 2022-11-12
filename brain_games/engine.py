@@ -30,7 +30,7 @@ def arithmetic_operations(operation, number1, number2):
         correct_answer = number1 - number2
     else:
         correct_answer = number1 * number2
-    return result
+    return correct_answer
 
 
 def dividing(num):
