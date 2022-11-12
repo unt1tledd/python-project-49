@@ -4,11 +4,11 @@ import random
 import prompt
 
 
-def ev(question):
+def is_even(question):
     if question % 2 == 0:
-        result = 'yes'
+        correct_answer = 'yes'
     else:
-        result = 'no'
+        correct_answer = 'no'
     return result
 
 
@@ -22,17 +22,17 @@ def num_in_list():
     return numbers
 
 
-def arifm(operation, number1, number2):
+def arithmetic_operations(operation, number1, number2):
     if operation == '+':
-        result = number1 + number2
+        correct_answer = number1 + number2
     elif operation == '-':
-        result = number1 - number2
+        correct_answer = number1 - number2
     else:
-        result = number1 * number2
+        correct_answer = number1 * number2
     return result
 
 
-def delimost(num):
+def dividing(num):
     b = 0
     for i in range(2, 9):
         if (num % i) == 0:
@@ -40,22 +40,22 @@ def delimost(num):
     return b
 
 
-def pr(num):
-    b = delimost(num)
+def is_prime(num):
+    b = dividing(num)
     if (num >= 9 and b > 0) or (num <= 9 and b > 1):
         return 'no'
     else:
         return 'yes'
 
 
-def check(question, result):
+def check_the_response(question, correct_answer):
     print(f"Question: {question}")
     answer = prompt.string('Your answer: ')
-    if result == answer:
+    if correct_answer == answer:
         print('Correct!')
         return True
     else:
-        print(f"{answer} is wrong answer ;(. Correct answer was {result}")
+        print(f"{answer} is wrong answer ;(. Correct answer was {correct_answer}")
         return False
 
 
@@ -64,8 +64,8 @@ def logic_of_game(name_of_game):
     print(name_of_game.rule)
     a = 3
     while a > 0:
-        question, result = name_of_game.task()
-        if check(question, result):
+        question, correct_answer = name_of_game.task()
+        if check(question, correct_answer):
             a -= 1
             if a == 0:
                 print(f'Congratulations, {name}!')
