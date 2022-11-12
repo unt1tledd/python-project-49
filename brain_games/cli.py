@@ -25,7 +25,6 @@ def num_in_list():
     st = random.randint(1, 10)
     for i in range(num1, num2, st):
         numbers.append(i)
-    numbers.sort()
     return numbers
 
 
