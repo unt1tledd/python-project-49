@@ -65,7 +65,7 @@ def logic_of_game(name_of_game):
     print(name_of_game.rule)
     a = 3
     while a > 0:
-        question, correct_answer = name_of_game.task()
+        question, correct_answer = name_of_game.tasking()
         if check(question, correct_answer):
             a -= 1
             if a == 0:
