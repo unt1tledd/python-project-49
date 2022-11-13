@@ -4,7 +4,7 @@ import random
 import math
 
 
-rule = 'Find the greatest common divisor of given numbers.'
+RULE_OF_GAME = 'Find the greatest common divisor of given numbers.'
 
 
 def tasking():
