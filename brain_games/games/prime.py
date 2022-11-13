@@ -11,13 +11,14 @@ def is_prime(num):
     for i in range(2, 9):
         if (num % i) == 0:
             b += 1
-    if (num >= 9 and b > 0) or (num <= 9 and b > 1):
-        return 'no'
-    else:
-        return 'yes'
+    return b
 
 
 def tasking():
-    question = random.randint(2, 100)
-    correct_answer = str(is_prime(question))
-    return question, correct_answer
+    num = random.randint(2, 100)
+    b = str(is_prime(num))
+     if (num >= 9 and b > 0) or (num <= 9 and b > 1):
+        correct_answer = 'no'
+    else:
+        correct_answer = 'yes'
+    return num, correct_answer
