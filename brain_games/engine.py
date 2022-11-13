@@ -12,7 +12,7 @@ def logic_of_game(name_of_game):
         question, correct_ans = name_of_game.tasking()
         print(f"Question: {question}")
         answer = prompt.string("Your answer: ")
-        if correct_ans == result:
+        if correct_ans == answer:
             print('Correct!')
             a -= 1
             if a == 0:
