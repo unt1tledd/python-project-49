@@ -2,7 +2,7 @@
 import random
 
 
-rule = 'What is the result of the expression?'
+RULE_OF_GAME = 'What is the result of the expression?'
 
 
 def arithmetic_operations(operation, number1, number2):
