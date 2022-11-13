@@ -8,10 +8,10 @@ rule = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 def is_prime(num):
     b = 0
-    for i in range(2, 9):
+    for i in range(2, num // 2 + 1):
         if (num % i) == 0:
             b += 1
-    if (num >= 9 and b > 0) or (num <= 9 and b > 1):
+    if b <= 0:
         return 'no'
     else:
         return 'yes'
