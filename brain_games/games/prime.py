@@ -6,18 +6,18 @@ RULE_OF_GAME = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def is_prime(num):
-    b = 0
+    divs = 0
     for i in range(2, 9):
         if (num % i) == 0:
-            b += 1
-    return b
+            divs += 1
+    return divs
 
 
-def tasking():
+def play_round():
     num = random.randint(2, 100)
-    b = is_prime(num)
-    if (num >= 9 and b > 0) or (num <= 9 and b > 1):
+    divs = is_prime(num)
+    if (num >= 9 and divs > 0) or (num <= 9 and divs > 1):
         correct_answer = 'no'
     else:
         correct_answer = 'yes'
-    return num, correct_answer
+    return str(num), correct_answer
