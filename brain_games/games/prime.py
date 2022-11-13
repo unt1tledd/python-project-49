@@ -15,7 +15,7 @@ def is_prime(num):
 
 def play_round():
     num = random.randint(2, 100)
-    if is_prime():
+    if is_prime(num):
         correct_answer = 'no'
     else:
         correct_answer = 'yes'
