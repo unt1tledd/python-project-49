@@ -14,7 +14,7 @@ def is_even(question):
 def tasking():
     question = random.randint(1, 100)
     check = is_even(question)
-    if check == True:
+    if check:
         correct_answer = 'yes'
     else:
         correct_answer = 'no'
