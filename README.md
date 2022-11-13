@@ -10,7 +10,6 @@
   cd python-project-49
   make build
   make package-install
-  pip install --user hexlet-code
   ```
 
   <h2>Commands:</h2>
