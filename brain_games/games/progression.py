@@ -1,10 +1,19 @@
 
 
 import random
-from brain_games.engine import creating_progress
 
 
 rule = 'What number is missing in the progression?'
+
+
+def creating_progress():
+    progression = []
+    num1 = random.randint(0, 10)
+    num2 = random.randint(90, 100)
+    st = random.randint(1, 10)
+    for i in range(num1, num2, st):
+        progression.append(i)
+    return progression
 
 
 def tasking():
