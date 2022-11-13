@@ -1,12 +1,15 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = "brain-games"
+description = "Math game for the brain"
 authors = ["Sonya Grigorovich"]
 readme = "README.md"
 packages = [{include = "brain_games"}]
 repository = "https://github.com/unt1tledd/python-project-49.git"
-classifiers = []
+classifiers = [
+Programming Language :: Python :: 3
+Topic :: Scientific/Engineering :: Mathematics
+]
 
 [tool.poetry.dependencies]
 python = "^3.8"
