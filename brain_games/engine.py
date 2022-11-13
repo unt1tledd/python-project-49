@@ -15,7 +15,7 @@ def play(game):
     print(game.RULE_OF_GAME)
     a = 3
     while a > 0:
-        question, correct_answer = game.tasking()
+        question, correct_answer = game.play_round()
         print(f"Question: {question}")
         answer = prompt.string("Your answer: ")
         if correct_answer == answer:
