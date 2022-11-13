@@ -10,13 +10,12 @@ def is_prime(num):
     for i in range(2, 9):
         if (num % i) == 0:
             divs += 1
-    return divs
+    return ((num >= 9 and divs > 0) or (num <= 9 and divs > 1))
 
 
 def play_round():
     num = random.randint(2, 100)
-    divs = is_prime(num)
-    if (num >= 9 and divs > 0) or (num <= 9 and divs > 1):
+    if is_prime():
         correct_answer = 'no'
     else:
         correct_answer = 'yes'
