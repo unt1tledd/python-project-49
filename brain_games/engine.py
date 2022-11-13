@@ -12,7 +12,7 @@ def welcome_user():
 
 def play(name_of_game):
     name = welcome_user()
-    print(name_of_game.rule)
+    print(name_of_game.RULE_OF_GAME)
     a = 3
     while a > 0:
         question, correct_answer = name_of_game.tasking()
