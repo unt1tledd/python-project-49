@@ -1,25 +1,30 @@
 
 
 import prompt
-from brain_games.cli import welcome_user
 
 
-def logic_of_game(name_of_game):
+def welcome_user():
+    print('Welcome to the Brain Games!')
+    name = prompt.string('May I have your name? ')
+    print(f'Hello, {name}!')
+    return name
+
+
+def play(name_of_game):
     name = welcome_user()
     print(name_of_game.rule)
     a = 3
     while a > 0:
-        question, correct = name_of_game.tasking()
+        question, correct_answer = name_of_game.tasking()
         print(f"Question: {question}")
         answer = prompt.string("Your answer: ")
-        if correct == answer:
+        if correct_answer == answer:
             print('Correct!')
             a -= 1
             if a == 0:
                 print(f'Congratulations, {name}!')
-            else:
-                continue
         else:
-            print(f"{answer} is wrong answer ;(. Correct answer was {correct}")
+            print(f"{answer} is wrong answer ;(.
+                  Correct answer was {correct_answer}")
             print(f"Let's try again, {name}!")
             break
