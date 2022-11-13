@@ -16,10 +16,10 @@ def creating_progress():
     return progression
 
 
-def tasking():
+def play_round():
     progression = creating_progress()
     num = random.randint(1, 9)
     correct_answer = str(progression[num])
     progression[num] = '..'
-    question = " ".join(map(str, progression[0:10]))
+    question = " ".join(map(str, progression))
     return question, correct_answer
