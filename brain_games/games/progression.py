@@ -3,7 +3,7 @@
 import random
 
 
-rule = 'What number is missing in the progression?'
+RULE_OF_GAME = 'What number is missing in the progression?'
 
 
 def creating_progress():
