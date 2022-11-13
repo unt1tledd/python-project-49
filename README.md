@@ -1,6 +1,6 @@
 <h1>BRAIN-GAMES</h1>
 
-[[![hexlet-check](https://github.com/unt1tledd/python-project-49/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/unt1tledd/python-project-49/actions/workflows/hexlet-check.yml)
+[![hexlet-check](https://github.com/unt1tledd/python-project-49/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/unt1tledd/python-project-49/actions/workflows/hexlet-check.yml)
 <a href="https://codeclimate.com/github/unt1tledd/python-project-49/maintainability"><img src="https://api.codeclimate.com/v1/badges/0341c2f9d690dfc0840e/maintainability" /></a>
 
   <h2>Install</h2>
