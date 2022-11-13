@@ -10,12 +10,12 @@ def welcome_user():
     return name
 
 
-def play(name_of_game):
+def play(game):
     name = welcome_user()
-    print(name_of_game.RULE_OF_GAME)
+    print(game.RULE_OF_GAME)
     a = 3
     while a > 0:
-        question, correct_answer = name_of_game.tasking()
+        question, correct_answer = game.tasking()
         print(f"Question: {question}")
         answer = prompt.string("Your answer: ")
         if correct_answer == answer:
@@ -25,6 +25,6 @@ def play(name_of_game):
                 print(f'Congratulations, {name}!')
         else:
             print(f"{answer} is wrong answer ;(. /
-            Correct answer was {correct_answer}")
+Correct answer was {correct_answer}")
             print(f"Let's try again, {name}!")
             break
