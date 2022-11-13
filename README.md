@@ -3,7 +3,16 @@
 [![hexlet-check](https://github.com/unt1tledd/python-project-49/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/unt1tledd/python-project-49/actions/workflows/hexlet-check.yml)
 <a href="https://codeclimate.com/github/unt1tledd/python-project-49/maintainability"><img src="https://api.codeclimate.com/v1/badges/0341c2f9d690dfc0840e/maintainability" /></a>
 
-  <h2>COMMANDS:</h2>
+  <h2>Install</h2>
+  
+  ``` 
+  git clone https://github.com/unt1tledd/python-project-49.git
+  cd python-project-49
+  make package-install
+  pip install --user brain-games
+  ```
+
+  <h2>Commands:</h2>
 
 1.brain-even:
 
