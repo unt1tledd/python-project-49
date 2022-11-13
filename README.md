@@ -8,8 +8,9 @@
   ``` 
   git clone https://github.com/unt1tledd/python-project-49.git
   cd python-project-49
+  make build
   make package-install
-  pip install --user brain-games
+  pip install --user hexlet-code
   ```
 
   <h2>Commands:</h2>
