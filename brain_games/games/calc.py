@@ -1,9 +1,18 @@
 
 import random
-from brain_games.engine import arithmetic_operations
 
 
 rule = 'What is the result of the expression?'
+
+
+def arithmetic_operations(operation, number1, number2):
+    if operation == '+':
+        correct_answer = number1 + number2
+    elif operation == '-':
+        correct_answer = number1 - number2
+    else:
+        correct_answer = number1 * number2
+    return correct_answer
 
 
 def tasking():
