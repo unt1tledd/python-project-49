@@ -7,7 +7,8 @@ rule = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def is_even(question):
-    question % 2 == 0
+    check = bool(question % 2 == 0)
+    return check
 
 
 def tasking():
