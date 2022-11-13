@@ -10,7 +10,7 @@ def logic_of_game(name_of_game):
     a = 3
     while a > 0:
         question, correct_ans = name_of_game.tasking()
-        print(f"Question: {question})
+        print(f"Question: {question}")
         answer = prompt.string("Your answer: ")
         if correct_ans == result:
             print('Correct!')
