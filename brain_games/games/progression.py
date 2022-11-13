@@ -6,7 +6,7 @@ import random
 RULE_OF_GAME = 'What number is missing in the progression?'
 
 
-def creating_progress():
+def create_progress():
     progression = []
     num1 = random.randint(0, 10)
     num2 = random.randint(90, 100)
@@ -17,7 +17,7 @@ def creating_progress():
 
 
 def play_round():
-    progression = creating_progress()
+    progression = create_progress()
     num = random.randint(1, 9)
     correct_answer = str(progression[num])
     progression[num] = '..'
