@@ -9,10 +9,10 @@ def logic_of_game(name_of_game):
     print(name_of_game.rule)
     a = 3
     while a > 0:
-        question, correct_ans = name_of_game.tasking()
+        question, correct = name_of_game.tasking()
         print(f"Question: {question}")
         answer = prompt.string("Your answer: ")
-        if correct_ans == answer:
+        if correct == answer:
             print('Correct!')
             a -= 1
             if a == 0:
@@ -20,6 +20,6 @@ def logic_of_game(name_of_game):
             else:
                 continue
         else:
-            print(f"{answer} is wrong answer ;(. Correct answer was {correct_ans}")
+            print(f"{answer} is wrong answer ;(. Correct answer was {correct}")
             print(f"Let's try again, {name}!")
             break
