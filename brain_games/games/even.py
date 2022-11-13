@@ -12,4 +12,4 @@ def play_round():
         correct_answer = 'yes'
     else:
         correct_answer = 'no'
-    return question, correct_answer
+    return str(question), correct_answer
