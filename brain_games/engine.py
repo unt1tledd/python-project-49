@@ -1,15 +1,10 @@
 import prompt
 
 
-def welcome_user():
+def play(game):
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!')
-    return name
-
-
-def play(game):
-    name = welcome_user()
     print(game.RULE_OF_GAME)
     round_number = 0
     while round_number != 0:
