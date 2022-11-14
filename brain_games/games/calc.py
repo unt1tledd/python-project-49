@@ -10,7 +10,7 @@ def count(operation, number1, number2):
         correct_answer = number1 + number2
     elif operation == '-':
         correct_answer = number1 - number2
-    else:
+    elif operation == '*':
         correct_answer = number1 * number2
     return correct_answer
 
