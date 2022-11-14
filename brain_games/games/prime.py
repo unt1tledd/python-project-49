@@ -1,4 +1,3 @@
-
 import random
 
 
@@ -13,7 +12,7 @@ def is_prime(num):
     return ((num >= 9 and divs > 0) or (num <= 9 and divs > 1))
 
 
-def play_round():
+def generate_round():
     num = random.randint(2, 100)
     if is_prime(num):
         correct_answer = 'no'
