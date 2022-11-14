@@ -3,6 +3,7 @@ import random
 
 RULE_OF_GAME = 'Answer "yes" if the number is even, otherwise answer "no".'
 
+
 def is_even(question):
     return (question % 2 == 0)
 
