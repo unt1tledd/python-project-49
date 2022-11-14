@@ -5,7 +5,8 @@ RULE_OF_GAME = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def is_even(question):
-    return (question % 2 == 0)
+    check = (question % 2 == 0)
+    return check
 
 
 def generate_round():
