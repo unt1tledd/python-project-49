@@ -8,7 +8,7 @@ def is_even(question):
     return (question % 2 == 0)
 
 
-def play_round():
+def generate_round():
     question = random.randint(1, 100)
     if is_even(question):
         correct_answer = 'yes'
