@@ -1,5 +1,3 @@
-
-
 import prompt
 
 
@@ -13,15 +11,15 @@ def welcome_user():
 def play(game):
     name = welcome_user()
     print(game.RULE_OF_GAME)
-    round_number = 3
-    while round_number > 0:
-        question, correct_answer = game.play_round()
+    round_number = 0
+    while round_number != 0:
+        question, correct_answer = game.generate_round()
         print(f"Question: {question}")
         answer = prompt.string("Your answer: ")
         if correct_answer == answer:
             print('Correct!')
-            round_number -= 1
-            if round_number == 0:
+            round_number += 1
+            if round_number == 3:
                 print(f'Congratulations, {name}!')
         else:
             print(f'{answer} is wrong answer ;(.')
