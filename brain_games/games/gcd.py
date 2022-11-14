@@ -5,7 +5,7 @@ import math
 RULE_OF_GAME = 'Find the greatest common divisor of given numbers.'
 
 
-def play_round():
+def generate_round():
     number1 = random.randint(1, 100)
     number2 = random.randint(1, 100)
     correct_answer = str(math.gcd(number1, number2))
