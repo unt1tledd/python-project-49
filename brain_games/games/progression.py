@@ -16,7 +16,7 @@ def create_progression():
 
 def generate_round():
     progression = create_progression()
-    num_to_hide= random.randint(1, 9)
+    num_to_hide = random.randint(1, 9)
     correct_answer = str(progression[num_to_hide])
     progression[num_to_hide] = '..'
     question = " ".join(map(str, progression))
