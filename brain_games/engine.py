@@ -7,7 +7,7 @@ def play(game):
     print(f'Hello, {name}!')
     print(game.RULE_OF_GAME)
     round_number = 0
-    while round_number > 0:
+    while round_number < 3:
         question, correct_answer = game.generate_round()
         print(f"Question: {question}")
         answer = prompt.string("Your answer: ")
