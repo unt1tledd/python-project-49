@@ -1,5 +1,7 @@
 import prompt
 
+MAX_ROUND = 3
+
 
 def play(game):
     print('Welcome to the Brain Games!')
@@ -7,14 +9,14 @@ def play(game):
     print(f'Hello, {name}!')
     print(game.RULE_OF_GAME)
     round_number = 0
-    while round_number < 3:
+    while round_number < MAX_ROUND:
         question, correct_answer = game.generate_round()
         print(f"Question: {question}")
         answer = prompt.string("Your answer: ")
         if correct_answer == answer:
             print('Correct!')
             round_number += 1
-            if round_number == 3:
+            if round_number == MAX_ROUND:
                 print(f'Congratulations, {name}!')
         else:
             print(f'{answer} is wrong answer ;(.')
