@@ -14,7 +14,7 @@ def create_progression(num1, num2, st):
 def generate_round():
     num1 = random.randint(0, 10)
     num2 = random.randint(90, 100)
-    st = random.randint(1,10)
+    st = random.randint(1, 10)
     progression = create_progression(num1, num2, st)
     num_to_hide = random.randint(1, 9)
     correct_answer = str(progression[num_to_hide])
